@@ -27,4 +27,4 @@ jobs:
     - name: run test without NonDex
       run: mvn -pl . test -Dtest=com.google.cloud.teleport.bigtable.CassandraRowMapperFnTest#testIPv4Column
     - name: run test with NonDex
-      run: mvn -pl . edu.illinois:nondex-maven-plugin:1.1.2:nondext -Dtest=com.google.cloud.teleport.bigtable.CassandraRowMapperFnTest#testIPv4Column
+      run: mvn -pl . edu.illinois:nondex-maven-plugin:1.1.2:nondex -Dtest=com.google.cloud.teleport.bigtable.CassandraRowMapperFnTest#testIPv4Column
