@@ -53,7 +53,7 @@ import java.time.ZoneId;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Random;
 import java.util.Set;
@@ -388,7 +388,7 @@ public class CassandraRowMapperFnTest extends CassandraBaseTest {
 
   @Test
   public void testSetColumn() {
-    Set<Integer> value = new HashSet<>();
+    Set<Integer> value = new LinkedHashSet<>();
     value.add(1);
     value.add(2);
 
